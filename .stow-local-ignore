@@ -1,5 +1,6 @@
 .git
 .gitmodules
 init.sh
+remove.sh
 vscode
 z
