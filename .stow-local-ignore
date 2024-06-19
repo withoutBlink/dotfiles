@@ -2,5 +2,7 @@
 .gitmodules
 init.sh
 remove.sh
+.zshrc
+.oh-my-zsh
 vscode
 z
