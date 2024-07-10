@@ -1,0 +1,71 @@
+" highlight matched
+set hlsearch
+" case insensitive search
+set ignorecase
+set smartcase
+" search while typing
+set incsearch
+" wrap-around when searching
+set wrapscan
+" show pressed keys in lower right corner
+set showcmd
+" tab -> spaces
+" set expandtab
+set tabstop=8
+set shiftwidth=8
+" keep a 5 line buffer for the cursor from top/bottom of window
+set scrolloff=5
+" X11 clipboard
+set clipboard=unnamed
+" use ~ with movement
+set tildeop
+
+" mappings
+inoremap jk <Esc>
+inoremap kj <Esc>
+
+nnoremap ; :
+nnoremap u :undo<CR>
+nnoremap U :redo<CR>
+
+nnoremap gt :gototype<CR>
+nnoremap gd :gotodefinition<CR>
+nnoremap gD :gotodeclaration<CR>
+nnoremap gr :gotoreference<CR>
+nnoremap gh :tglheadersource<CR>
+nnoremap gc :tglcomment<CR>
+
+" gg spped up
+nnoremap gg gg
+
+" builtin next and previous command 'cN' and 'cn'
+nnoremap [d :cN<CR>
+nnoremap ]d :cn<CR>
+
+nnoremap F :autoformat<CR>
+
+nnoremap <C-O> :goback<CR>
+nnoremap <C-I> :goforward<CR>
+
+nnoremap <C-L> <C-W>l
+nnoremap <C-H> <C-W>h
+
+nnoremap <Space>w :w<CR>
+nnoremap <Space>q :q<CR>
+nnoremap <Space>Q :q!<CR>
+nnoremap <Space>c :q<CR>
+nnoremap <Space>C :q!<CR>
+nnoremap <Space>h :noh<CR>
+nnoremap <Space>e :toggleleftsidebar<CR>
+nnoremap <Space>t :togglerightside<CR>
+nnoremap <Space>r :renamesymbol<CR>
+
+" reselect visual block after indent
+vnoremap < <gv
+vnoremap > >gv
+vnoremap F :autoformat<CR>
+vnoremap gc :tglcomment<CR>
+
+" MOVE LINE/BLOCK
+vnoremap <S-J> :m'>+<CR>gv
+vnoremap <S-K> :m'<-2<CR>gv
