@@ -29,7 +29,7 @@ nnoremap u :undo<CR>
 nnoremap U :redo<CR>
 
 nnoremap gd :tag<CR>
-nnoremap gr :findusage<CR>
+nnoremap gr :findrefs<CR>
 nnoremap gh :A<CR>
 nnoremap gc :comment<CR>
 
