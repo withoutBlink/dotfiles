@@ -28,12 +28,10 @@ nnoremap ; :
 nnoremap u :undo<CR>
 nnoremap U :redo<CR>
 
-nnoremap gt :gototype<CR>
-nnoremap gd :gotodefinition<CR>
-nnoremap gD :gotodeclaration<CR>
-nnoremap gr :gotoreference<CR>
-nnoremap gh :tglheadersource<CR>
-nnoremap gc :tglcomment<CR>
+nnoremap gd :tag<CR>
+nnoremap gr :findusage<CR>
+nnoremap gh :A<CR>
+nnoremap gc :comment<CR>
 
 " gg spped up
 nnoremap gg gg
@@ -42,10 +40,10 @@ nnoremap gg gg
 nnoremap [d :cN<CR>
 nnoremap ]d :cn<CR>
 
-nnoremap F :autoformat<CR>
+nnoremap F :format<CR>
 
-nnoremap <C-O> :goback<CR>
-nnoremap <C-I> :goforward<CR>
+nnoremap <C-O> :back<CR>
+nnoremap <C-I> :forward<CR>
 
 nnoremap <C-L> <C-W>l
 nnoremap <C-H> <C-W>h
@@ -56,15 +54,13 @@ nnoremap <Space>Q :q!<CR>
 nnoremap <Space>c :q<CR>
 nnoremap <Space>C :q!<CR>
 nnoremap <Space>h :noh<CR>
-nnoremap <Space>e :toggleleftsidebar<CR>
-nnoremap <Space>t :togglerightside<CR>
-nnoremap <Space>r :renamesymbol<CR>
+nnoremap <Space>r :rename<CR>
 
 " reselect visual block after indent
 vnoremap < <gv
 vnoremap > >gv
-vnoremap F :autoformat<CR>
-vnoremap gc :tglcomment<CR>
+vnoremap F :format<CR>
+vnoremap gc :comment<CR>
 
 " MOVE LINE/BLOCK
 vnoremap <S-J> :m'>+<CR>gv
