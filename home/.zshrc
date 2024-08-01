@@ -110,15 +110,21 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH="/opt/homebrew/bin:/Users/andrew/Applications/bin:/Users/andrew/Applications/init/v2ray:$PATH"
+HOMEBREW_BIN_DIR="/opt/homebrew/bin"
+USER_BIN_DIR="$HOME/Applications/bin"
+USER_V2RAY_DIR="$HOME/Applications/init/v2ray"
+CLANG_BIN_DIR="/opt/homebrew/opt/llvm/bin"
+RUST_CARGO_DIR="$HOME/.cargo/bin"
+
+export PATH=$USER_V2RAY_DIR:$CLANG_BIN_DIR:$RUST_CARGO_DIR:$HOMEBREW_BIN_DIR:$PATH
 source $HOME/.config/z/zsh-z.plugin.zsh
+source <(fzf --zsh)
 
 alias ls="ls -F"
 alias ll="exa --long --header --git -F --icons"
 alias strace="dtruss"
 alias ldd="otool -L"
 alias ipa="ifconfig en0"
-alias tmux='tmux -u'
 
 # git short-cut
 alias gl="git log"
