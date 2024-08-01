@@ -118,6 +118,7 @@ alias ll="exa --long --header --git -F --icons"
 alias strace="dtruss"
 alias ldd="otool -L"
 alias ipa="ifconfig en0"
+alias tmux='tmux -u'
 
 # git short-cut
 alias gl="git log"
