@@ -116,6 +116,8 @@ USER_V2RAY_DIR="$HOME/Applications/init/v2ray"
 CLANG_BIN_DIR="/opt/homebrew/opt/llvm/bin"
 RUST_CARGO_DIR="$HOME/.cargo/bin"
 
+set -o vi
+
 export PATH=$USER_V2RAY_DIR:$CLANG_BIN_DIR:$RUST_CARGO_DIR:$HOMEBREW_BIN_DIR:$PATH
 source $HOME/.config/z/zsh-z.plugin.zsh
 source <(fzf --zsh)
@@ -138,6 +140,5 @@ alias gc="git commit"
 export ALL_PROXY="http://127.0.0.1:10807"
 export all_proxy="http://127.0.0.1:10807"
 
-set -o vi
 EDITOR=nvim
 KEYTIMEOUT=1

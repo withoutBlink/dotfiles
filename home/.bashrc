@@ -1,5 +1,6 @@
 # RUNS ON BASH START
 # PUT EVERY CONFIGURATION HERE
+
 alias tmux='tmux -u'
 
 alias cd='builtin cd'
