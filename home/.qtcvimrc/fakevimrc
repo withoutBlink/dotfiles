@@ -1,22 +1,30 @@
 " highlight matched
 set hlsearch
+
 " case insensitive search
 set ignorecase
 set smartcase
+
 " search while typing
 set incsearch
+
 " wrap-around when searching
 set wrapscan
+
 " show pressed keys in lower right corner
 set showcmd
+
 " tab -> spaces
 " set expandtab
 set tabstop=8
 set shiftwidth=8
+
 " keep a 5 line buffer for the cursor from top/bottom of window
 set scrolloff=5
-" X11 clipboard
+
+" shared clipboard
 set clipboard=unnamed
+
 " use ~ with movement
 set tildeop
 
@@ -37,6 +45,8 @@ nnoremap gc :comment<CR>
 
 " gg spped up
 nnoremap gg gg
+nnoremap j gj
+nnoremap k gk
 
 " builtin next and previous command 'cN' and 'cn'
 nnoremap [d :cN<CR>
@@ -57,6 +67,8 @@ nnoremap <Space>c :q<CR>
 nnoremap <Space>C :q!<CR>
 nnoremap <Space>h :noh<CR>
 nnoremap <Space>r :rename<CR>
+nnoremap <Space>e :toggleleft<CR>
+nnoremap <Space>t :toggleright<CR>
 
 " reselect visual block after indent
 vnoremap < <gv
@@ -64,6 +76,6 @@ vnoremap > >gv
 vnoremap F :format<CR>
 vnoremap gc :comment<CR>
 
-" MOVE LINE/BLOCK
+" move line/block
 vnoremap <S-J> :m'>+<CR>gv
 vnoremap <S-K> :m'<-2<CR>gv
