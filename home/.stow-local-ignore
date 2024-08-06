@@ -2,3 +2,4 @@
 .gitmodules
 init.sh
 remove.sh
+adopt.sh
