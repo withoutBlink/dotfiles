@@ -54,8 +54,8 @@ nnoremap ]d :cn<CR>
 
 nnoremap F :format<CR>
 
-nnoremap <C-O> :back<CR>
-nnoremap <C-I> :forw<CR>
+" nnoremap <C-O> :back<CR>
+" nnoremap <C-I> :forw<CR>
 
 nnoremap <C-L> <C-W>l
 nnoremap <C-H> <C-W>h
