@@ -6,13 +6,13 @@ alias tmux='tmux -u'
 alias cd='builtin cd'
 # DO NOT mess up with BSD command, use 'unalias' to remove a alias
 
-alias note='tee -a /Users/qiulinyang/Desktop/note.new'
+alias note='tee -a $HOME/Desktop/note.new'
 # easy way to take notes
 
-alias editbash='vim /Users/qiulinyang/.bashrc'
+alias editbash='vim $HOME/.bashrc'
 # qucikly edit bash profile
 
-alias sourcebash='source /Users/qiulinyang/.bashrc'
+alias sourcebash='source $HOME/.bashrc'
 # quickly put new bash in use
 
 alias ls='ls -hF'
@@ -30,7 +30,7 @@ cht(){ curl cheat.sh/$@;}
 back(){ cds "$OLDPWD"; }
 # use a fuction for back not a alias for good
 
-trash(){ command mv "$@" /Users/qiulinyang/.Trash;}
+trash(){ command mv "$@" $HOME/.Trash;}
 # mv subject to trash bin
 
 cds() { builtin cd "$1" && ls; }
