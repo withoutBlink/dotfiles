@@ -18,7 +18,6 @@ set hlsearch
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
-
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 
 " Highlight copied text
@@ -79,7 +78,7 @@ map <leader>v <Action>(OpenEditorInOppositeTabGroup)
 map <leader>r <Action>(Refactorings.QuickListPopupAction)
 map <leader>t <Action>(FileStructurePopup)
 
-map gh <Action>(SwitchHeaderSource)
+map gh <Action>(CIDR.Lang.SwitchHeaderSource)
 map gr <Action>(FindUsages)
 map gd <Action>(GotoDeclaration)
 map gD <Action>(CppGenerateDefinitions)
