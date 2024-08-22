@@ -112,6 +112,7 @@ source $ZSH/oh-my-zsh.sh
 
 # export PATH="/opt/homebrew/bin:$HOME/Applications/bin:$HOME/Applications/init/v2ray:$PATH"
 source $HOME/.config/z/zsh-z.plugin.zsh
+source <(fzf --zsh)
 
 alias ls="ls -F"
 alias ll="exa --long --header --git -F --icons"
