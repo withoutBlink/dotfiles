@@ -110,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH="/opt/homebrew/bin:$HOME/Applications/bin:$HOME/Applications/init/v2ray:$PATH"
+# export PATH="/opt/homebrew/bin:$HOME/Applications/bin:$HOME/Applications/init/v2ray:$PATH"
 source $HOME/.config/z/zsh-z.plugin.zsh
 
 alias ls="ls -F"
