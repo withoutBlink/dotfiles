@@ -1,0 +1,21 @@
+[user]
+	name = qlyang
+	email = yeluoqiulin@gmail.com
+
+[http]
+[http "https://github.com"]
+	proxy = http://127.0.0.1:10807
+	sslVerify = false
+[credential]
+	helper = store
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[core]
+	editor = nvim
