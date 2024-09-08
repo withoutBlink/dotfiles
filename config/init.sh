@@ -1,3 +1,3 @@
 #!/bin/bash
 
-stow --target=$HOME/.config .
+stow --target=$HOME/.config $@ .
