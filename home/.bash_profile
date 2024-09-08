@@ -8,10 +8,6 @@ if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi 
 
-# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home"
-
-export PATH="/opt/homebrew/bin:/Users/andrew/Applications/bin:/Users/andrew/Applications/init/v2ray:$PATH"
-
 . $HOME/.config/z/z.sh
 
 PS1="\u@\h:$ "

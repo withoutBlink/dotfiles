@@ -129,8 +129,11 @@ alias gb="git branch"
 alias ga="git add"
 alias gc="git commit"
 
-export ALL_PROXY="http://127.0.0.1:10807"
-export all_proxy="http://127.0.0.1:10807"
+export ALL_PROXY="http://192.168.23.1:10807"
+export all_proxy="http://192.168.23.1:10807"
+
+CLION_BIN_DIR=${HOME}/Applications/clion/bin
+export PATH=${CLION_BIN_DIR}:$PATH
 
 set -o vi
 EDITOR=nvim

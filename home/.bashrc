@@ -39,8 +39,9 @@ gd() { git diff; }
 
 gb() { git branch --show-current; }
 
-mount-ntfs(){ sudo /usr/local/bin/ntfs-3g $1 $2 -o allow_other -o auto_xattr -o auto_cache -o local; }
-
 set -o vi
 EDITOR=nvim
 KEYTIMEOUT=1
+
+CLION_BIN_DIR=${HOME}/Applications/clion/bin
+export PATH=${CLION_BIN_DIR}:$PATH
