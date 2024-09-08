@@ -1,0 +1,13 @@
+[shell]
+program = "/usr/bin/zsh"
+args = ["-l"]
+
+[window]
+dimensions = {columns = 120, lines = 45}
+decorations = "None"
+opacity = 0.85
+
+[keyboard]
+bindings = [
+{key = "N", mods = "Control|Shift", action = "CreateNewWindow"},
+]
