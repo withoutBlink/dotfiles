@@ -3,7 +3,7 @@ program = "/usr/bin/zsh"
 args = ["-l"]
 
 [window]
-dimensions = {columns = 120, lines = 30}
+dimensions = {columns = 120, lines = 40}
 decorations = "None"
 padding = { x = 5, y = 5 }
 dynamic_padding = true
