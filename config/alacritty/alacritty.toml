@@ -3,7 +3,7 @@ program = "/usr/bin/zsh"
 args = ["-l"]
 
 [window]
-dimensions = {columns = 150, lines = 45}
+dimensions = {columns = 120, lines = 30}
 decorations = "None"
 opacity = 0.85
 
