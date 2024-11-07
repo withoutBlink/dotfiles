@@ -78,7 +78,7 @@ map <leader>v <Action>(OpenEditorInOppositeTabGroup)
 map <leader>r <Action>(Refactorings.QuickListPopupAction)
 map <leader>t <Action>(FileStructurePopup)
 
-map gh <Action>(CIDR.Lang.SwitchHeaderSource)
+map gh <Action>(SwitchHeaderSource)
 map gr <Action>(FindUsages)
 map gd <Action>(GotoDeclaration)
 map gD <Action>(CppGenerateDefinitions)
@@ -86,4 +86,3 @@ map gi <Action>(GotoImplementation)
 
 " Share clipboard with system
 set clipboard=unnamed
-set clipboard^=ideaput
