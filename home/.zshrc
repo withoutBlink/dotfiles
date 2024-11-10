@@ -137,6 +137,9 @@ alias gb="git branch"
 alias ga="git add"
 alias gc="git commit"
 
+export CC=clang
+export CXX=clang++
+
 export ALL_PROXY="http://127.0.0.1:10807"
 export all_proxy="http://127.0.0.1:10807"
 
