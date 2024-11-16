@@ -35,8 +35,8 @@ inoremap kj <Esc>
 nnoremap ; :
 nnoremap u :undo<CR>
 nnoremap U :redo<CR>
-nnoremap H :tabp<CR>
-nnoremap L :tabn<CR>
+nnoremap H :gotopreviousinhistory<CR>
+nnoremap L :gotonextinhistory<CR>
 
 nnoremap gd :tag<CR>
 nnoremap gr :findrefs<CR>
@@ -54,6 +54,8 @@ nnoremap ]d :cn<CR>
 
 nnoremap F :format<CR>
 
+" use shortcut instead,
+" need pass control keys enabled
 " nnoremap <C-O> :back<CR>
 " nnoremap <C-I> :forw<CR>
 
