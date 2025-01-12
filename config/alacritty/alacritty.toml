@@ -3,7 +3,7 @@ program = "/usr/bin/zsh"
 args = ["-l"]
 
 [window]
-dimensions = {columns = 120, lines = 40}
+dimensions = {columns = 150, lines = 45}
 decorations = "None"
 padding = { x = 5, y = 5 }
 dynamic_padding = true
@@ -11,7 +11,7 @@ opacity = 0.75
 
 [keyboard]
 bindings = [
-{key = "N", mods = "Control|Shift", action = "CreateNewWindow"},
+  {key = "N", mods = "Control|Shift", action = "CreateNewWindow"},
 ]
 
 [font]
