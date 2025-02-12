@@ -12,9 +12,9 @@ set wrapscan
 " show pressed keys in lower right corner
 set showcmd
 " tab -> spaces
-" set expandtab
-set tabstop=8
-set shiftwidth=8
+set expandtab
+set tabstop=2
+set shiftwidth=2
 " keep a 5 line buffer for the cursor from top/bottom of window
 set scrolloff=5
 " X11 clipboard
@@ -58,7 +58,6 @@ nnoremap <Space>c :q<CR>
 nnoremap <Space>h :noh<CR>
 nnoremap <Space>F :vsc workbench.action.showAllSymbols<CR>
 nnoremap <Space>f :vsc workbench.action.quickOpen<CR>
-nnoremap <Space>e :vsc workbench.view.explorer<CR>
 nnoremap <Space>t :vsc workbench.action.focusAuxiliaryBar<CR>
 nnoremap <Space>r :vsc editor.action.rename<CR>
 nnoremap <Space>v :vsc workbench.action.moveEditorToNextGroup<CR>
