@@ -26,7 +26,6 @@ set tildeop
 inoremap jk <Esc>
 inoremap kj <Esc>
 
-nnoremap ; :
 nnoremap u :undo<CR>
 nnoremap U :redo<CR>
 
@@ -36,8 +35,6 @@ nnoremap gD :vsc editor.action.goToDeclaration<CR>
 nnoremap gr :vsc editor.action.goToReferences<CR>
 nnoremap gc :vsc editor.action.commentLine<CR>
 nnoremap gh :vsc clangd.switchheadersource<CR>
-" gg spped up
-nnoremap gg gg
 
 " builtin next and previous command 'cN' and 'cn'
 nnoremap <Space>d :vsc workbench.actions.view.problems<CR>
