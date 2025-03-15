@@ -43,9 +43,10 @@ inoremap jk <esc>
 inoremap kj <esc>
 
 nnoremap <leader>w :w<cr>
-nnoremap <leader>q :q!<cr>
-nnoremap <leader>c :bd<cr>
-nnoremap <leader>C :bd!<cr>
+nnoremap <leader>bd :bd<cr>
+nnoremap <leader>bD :bd!<cr>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>Q :qa!<cr>
 nnoremap <leader>h :noh<cr>
 
 nnoremap mm :delm !<cr> :delm A-Z0-9<cr>
