@@ -43,9 +43,10 @@ inoremap jk <esc>
 inoremap kj <esc>
 
 nnoremap <leader>w :w<cr>
-nnoremap <leader>q :q!<cr>
-nnoremap <leader>c :bd<cr>
-nnoremap <leader>C :bd!<cr>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>Q :q!<cr>
+nnoremap <leader>bd :bd<cr>
+nnoremap <leader>bD :bd!<cr>
 nnoremap <leader>h :noh<cr>
 
 nnoremap mm :delm !<cr> :delm A-Z0-9<cr>
@@ -75,8 +76,8 @@ map <leader>f <Action>(GotoFile)
 map <leader>F <Action>(GotoSymbol)
 map <leader>a <Action>(GotoAction)
 map <leader>s <Action>(GotoText)
-map <leader>v <Action>(OpenEditorInOppositeTabGroup)
-map <leader>r <Action>(Refactorings.QuickListPopupAction)
+map <leader>bv <Action>(OpenEditorInOppositeTabGroup)
+map <leader>cr <Action>(Refactorings.QuickListPopupAction)
 map <leader>t <Action>(FileStructurePopup)
 
 map gh <Action>(CPPHeaderSourceFileSwitch)
