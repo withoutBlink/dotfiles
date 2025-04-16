@@ -16,14 +16,14 @@ set incsearch
 set hlsearch
 
 " Don't use Ex mode, use Q for formatting.
-map Q gq
+"map Q gq
 
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 
 " Highlight copied text
-Plug 'machakann/vim-highlightedyank'
+"Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
-Plug 'tpope/vim-commentary'
+"Plug 'tpope/vim-commentary'
 
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
@@ -75,8 +75,8 @@ map <leader>0 <Action>(ToggleCompactMode)
 map <leader>f <Action>(GotoFile)
 map <leader>F <Action>(GotoSymbol)
 map <leader>a <Action>(GotoAction)
-map <leader>v <Action>(OpenEditorInOppositeTabGroup)
-map <leader>r <Action>(Refactorings.QuickListPopupAction)
+map <leader>bv <Action>(OpenEditorInOppositeTabGroup)
+map <leader>cr <Action>(Refactorings.QuickListPopupAction)
 map <leader>t <Action>(FileStructurePopup)
 
 map gh <Action>(SwitchHeaderSource)
@@ -84,6 +84,7 @@ map gr <Action>(FindUsages)
 map gd <Action>(GotoDeclaration)
 map gD <Action>(CppGenerateDefinitions)
 map gi <Action>(GotoImplementation)
+map gc <Action>(CommentByLineComment)
 
 " Share clipboard with system
-set clipboard=unnamed
+set clipboard=
