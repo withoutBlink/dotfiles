@@ -46,3 +46,4 @@ mount-ntfs(){ sudo /usr/local/bin/ntfs-3g $1 $2 -o allow_other -o auto_xattr -o 
 set -o vi
 EDITOR=nvim
 KEYTIMEOUT=1
+. "$HOME/.cargo/env"
