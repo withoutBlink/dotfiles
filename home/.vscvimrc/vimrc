@@ -66,7 +66,7 @@ nnoremap <Space>V :vsc workbench.action.moveEditorToPreviousGroup<CR>
 vnoremap < <gv
 vnoremap > >gv
 vnoremap F :vsc editor.action.formatSelection<CR>
-vnoremap gc :vsc editor.action.blockComment<CR>
+vnoremap gc :vsc editor.action.commentLine<CR>
 
 " MOVE LINE/BLOCK
 vnoremap <S-J> :m'>+<CR>gv
