@@ -80,7 +80,7 @@ map <leader>bv <Action>(OpenEditorInOppositeTabGroup)
 map <leader>cr <Action>(Refactorings.QuickListPopupAction)
 map <leader>t <Action>(FileStructurePopup)
 
-map gh <Action>(CPPHeaderSourceFileSwitch)
+map gh <Action>(SwitchHeaderSource)
 map gr <Action>(FindUsages)
 map gd <Action>(GotoDeclaration)
 map gt <Action>(GotoTypeDeclaration)
