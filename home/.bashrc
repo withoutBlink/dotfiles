@@ -1,6 +1,8 @@
 # RUNS ON BASH START
 # PUT EVERY CONFIGURATION HERE
 
+alias tmux='tmux -u'
+
 alias cd='builtin cd'
 # DO NOT mess up with BSD command, use 'unalias' to remove a alias
 
@@ -43,5 +45,4 @@ set -o vi
 EDITOR=nvim
 KEYTIMEOUT=1
 
-CLION_BIN_DIR=${HOME}/Applications/clion/bin
-export PATH=${CLION_BIN_DIR}:$PATH
+. "$HOME/.cargo/env"

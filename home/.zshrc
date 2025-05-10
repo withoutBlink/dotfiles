@@ -110,7 +110,14 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# export PATH="/opt/homebrew/bin:$HOME/Applications/bin:$HOME/Applications/init/v2ray:$PATH"
+HOMEBREW_BIN_DIR="/opt/homebrew/bin"
+USER_BIN_DIR="$HOME/Applications/bin"
+CLANG_BIN_DIR="/opt/homebrew/opt/llvm/bin"
+RUST_CARGO_DIR="$HOME/.cargo/bin"
+
+set -o vi
+
+export PATH=$USER_BIN_DIR:$CLANG_BIN_DIR:$RUST_CARGO_DIR:$HOMEBREW_BIN_DIR:$PATH
 source $HOME/.config/z/zsh-z.plugin.zsh
 source <(fzf --zsh)
 
@@ -129,12 +136,8 @@ alias gb="git branch"
 alias ga="git add"
 alias gc="git commit"
 
-export ALL_PROXY="http://192.168.23.1:10807"
-export all_proxy="http://192.168.23.1:10807"
+export CC=clang
+export CXX=clang++
 
-CLION_BIN_DIR=${HOME}/Applications/clion/bin
-export PATH=${CLION_BIN_DIR}:$PATH
-
-set -o vi
 EDITOR=nvim
 KEYTIMEOUT=1
