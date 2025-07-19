@@ -110,28 +110,17 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-HOMEBREW_BIN_DIR="/opt/homebrew/bin"
-USER_BIN_DIR="$HOME/Applications/bin"
-CLANG_BIN_DIR="/opt/homebrew/opt/llvm/bin"
+USER_BIN_DIR="$HOME/.local/bin"
 RUST_CARGO_DIR="$HOME/.cargo/bin"
 
 set -o vi
 
-export PATH=$USER_BIN_DIR:$CLANG_BIN_DIR:$RUST_CARGO_DIR:$HOMEBREW_BIN_DIR:$PATH
+export PATH=$USER_BIN_DIR:$RUST_CARGO_DIR:$PATH
 source $HOME/.config/z/zsh-z.plugin.zsh
 source <(fzf --zsh)
 
-alias ls="ls -F"
-alias ll="exa --long --header --git -F --icons"
-alias strace="dtruss"
-alias ldd="otool -L"
-alias ipa="ifconfig en0"
-
 # git short-cut
 alias g="git"
-
-export CC=clang
-export CXX=clang++
 
 EDITOR=nvim
 KEYTIMEOUT=1
