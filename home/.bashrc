@@ -25,6 +25,9 @@ alias vboxmanage="VBoxManage"
 # easy version of VBoxManage,uuuhhh...
 
 alias vboxheadless="VBoxHeadless"
+
+alias g="git"
+
 cht(){ curl cheat.sh/$@;}
 
 back(){ cds "$OLDPWD"; }
@@ -34,12 +37,6 @@ trash(){ command mv "$@" $HOME/.Trash;}
 # mv subject to trash bin
 
 cds() { builtin cd "$1" && ls; }
-
-gs() { git status; }
-
-gd() { git diff; }
-
-gb() { git branch --show-current; }
 
 set -o vi
 EDITOR=nvim

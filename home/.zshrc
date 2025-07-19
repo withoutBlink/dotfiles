@@ -128,13 +128,7 @@ alias ldd="otool -L"
 alias ipa="ifconfig en0"
 
 # git short-cut
-alias gl="git log"
-alias gs="git status"
-alias gss="git show"
-alias gd="git diff"
-alias gb="git branch"
-alias ga="git add"
-alias gc="git commit"
+alias g="git"
 
 export CC=clang
 export CXX=clang++
