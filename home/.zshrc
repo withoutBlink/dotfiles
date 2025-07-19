@@ -110,12 +110,12 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-USER_BIN_DIR="$HOME/.local/bin"
-RUST_CARGO_DIR="$HOME/.cargo/bin"
+LOCAL_BIN_DIR="$HOME/.local/bin"
+USER_BIN_DIR="$HOME/Applications/bin"
 
 set -o vi
 
-export PATH=$USER_BIN_DIR:$RUST_CARGO_DIR:$PATH
+export PATH=$USER_BIN_DIR:$LOCAL_BIN_DIR:$PATH
 source $HOME/.config/z/zsh-z.plugin.zsh
 source <(fzf --zsh)
 
