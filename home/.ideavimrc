@@ -7,7 +7,7 @@
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
-set scrolloff=5
+set scrolloff=6
 
 " Do incremental searching.
 set incsearch
@@ -15,8 +15,17 @@ set incsearch
 " Highlight search
 set hlsearch
 
+" Relative line numbers
+set relativenumber=true
+
+" Tab and spaces
+set tabstop=2
+set shiftwidth=2
+set expandtab=true
+
+
 " Don't use Ex mode, use Q for formatting.
-map Q gq
+" map Q gq
 
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 
@@ -65,6 +74,8 @@ vnoremap J :m'>+1<CR>gv
 vnoremap K :m'<-2<CR>gv
 vnoremap < <gv
 vnoremap > >gv
+
+xnoremap p "_dP"
 
 map F <Action>(ReformatCode)
 
