@@ -115,7 +115,13 @@ USER_BIN_DIR="$HOME/Applications/bin"
 
 set -o vi
 
-export PATH=$USER_BIN_DIR:$LOCAL_BIN_DIR:$PATH
+if [ "$SYSTEM_EXTRA_PATH" ]; then
+  PATH=$SYSTEM_EXTRA_PATH:$PATH
+fi
+PATH=$USER_BIN_DIR:$LOCAL_BIN_DIR:$PATH
+export PATH
+GOPATH=$HOME/.local/go
+export GOPATH
 source $HOME/.config/z/zsh-z.plugin.zsh
 source <(fzf --zsh)
 
