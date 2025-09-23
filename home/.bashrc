@@ -43,3 +43,6 @@ EDITOR=nvim
 KEYTIMEOUT=1
 
 . "$HOME/.cargo/env"
+
+export ANDROID_HOME=$HOME/Applications/Android/Sdk
+
