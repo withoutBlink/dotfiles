@@ -5,3 +5,4 @@ remove.sh
 .zshrc
 .oh-my-zsh
 vscode
+.DS_Store

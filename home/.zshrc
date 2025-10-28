@@ -124,6 +124,7 @@ GOPATH=$HOME/.local/go
 export GOPATH
 source $HOME/.config/z/zsh-z.plugin.zsh
 source <(fzf --zsh)
+source $HOME/.config/arduino/completion.zsh
 
 # git short-cut
 alias g="git"
