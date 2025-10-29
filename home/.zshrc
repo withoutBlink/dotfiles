@@ -125,6 +125,7 @@ export GOPATH
 source $HOME/.config/z/zsh-z.plugin.zsh
 source <(fzf --zsh)
 source $HOME/.config/arduino/completion.zsh
+export ARDUINO_CONFIG_FILE=$HOME/.config/arduino/arduino-cli.yaml
 
 # git short-cut
 alias g="git"
