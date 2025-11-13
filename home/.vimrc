@@ -1,11 +1,16 @@
-" vimrc file for vscode only
+
+" color scheme
+colorscheme habamax
+
+" syntax
+syntax on
 
 " highlight matched
 set hlsearch
 
 " case insensitive search
-set ignorecase
-set smartcase
+" set ignorecase
+" set smartcase
 
 " search while typing
 set incsearch
@@ -18,8 +23,8 @@ set showcmd
 
 " tab -> spaces
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 
 " keep a 5 line buffer for the cursor from top/bottom of window
 set scrolloff=5
@@ -32,6 +37,13 @@ set tildeop
 
 " show cursor line
 set cursorline
+
+" show line number
+set number
+set relativenumber
+
+" indent
+set autoindent
 
 " mappings
 inoremap jk <Esc>
