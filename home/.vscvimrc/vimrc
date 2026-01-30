@@ -54,6 +54,7 @@ nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
 nnoremap <Space>Q :qa!<CR>
 nnoremap <Space>bd :bd<CR>
+nnoremap <Space>bD :bd<CR>
 nnoremap <Space>h :noh<CR>
 nnoremap <Space>F :vsc workbench.action.showAllSymbols<CR>
 nnoremap <Space>f :vsc workbench.action.quickOpen<CR>
