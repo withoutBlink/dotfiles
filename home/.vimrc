@@ -45,6 +45,9 @@ set relativenumber
 " indent
 set autoindent
 
+" default path, include current folder
+set path=,.
+
 " mappings
 inoremap jk <Esc>
 inoremap kj <Esc>
