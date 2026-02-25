@@ -22,9 +22,9 @@ set wrapscan
 set showcmd
 
 " tab -> spaces
-set expandtab
-set tabstop=4
-set shiftwidth=4
+" set expandtab
+" set tabstop=4
+" set shiftwidth=4
 
 " keep a 5 line buffer for the cursor from top/bottom of window
 set scrolloff=5
@@ -44,6 +44,10 @@ set relativenumber
 
 " indent
 set autoindent
+
+" fold
+set foldmethod=indent
+set foldlevelstart=99
 
 " default path, include current folder
 set path=,.
