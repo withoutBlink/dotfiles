@@ -52,6 +52,10 @@ set foldlevelstart=99
 " default path, include current folder
 set path=,.
 
+" default disable banner of netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+
 " mappings
 inoremap jk <Esc>
 inoremap kj <Esc>
